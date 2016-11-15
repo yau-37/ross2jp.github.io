@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+		<title>Joe Ross</title>
+		<link rel="stylesheet" href="site.css.scss">
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+		<!-- load jQuery script from Google CDN-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+		<script>window.jQuery || document.write('<script src="/js/jquery-1.11.0.min.js"><\/script>')</script>
+		<!-- load jQuery UI library -->
+
+		<script type="text/javascript" src='scripts/jquery-ui-1.10.4.min.js'></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				/*
+				 *	MY SKILLS SECTION:
+				 *	animates three clickable text boxes
+				 *	("people", "information" and "technology")
+				 */
+
+				// change header underline color on hover
+				/*$('.left-header, .middle-header, .right-header')
+				.mouseover(function() {
+					$(this).stop().animate({ borderBottomColor: '#8C8C8C'}, 200);
+				}).mouseout(function() {
+					$(this).stop().animate({ borderBottomColor: '#DEDEDE'}, 200)
+				});
+*/
+				//shows different texts on click of one of the three headers
+				$('.left-header, .middle-header, .right-header').click(function() {
+
+					// has to disappear in any case
+					$('.placeholder').css({'display':'none'});
+
+					if ($(this).is('.left-header')) {
+						$('.middle-text').css({'display':'none'});
+						$('.right-text').css({'display':'none'});
+						$('.left-text').fadeIn();
+					}
+					else if ($(this).is('.middle-header')) {
+						$('.left-text').css({'display':'none'});
+						$('.right-text').css({'display':'none'});
+						$('.middle-text').fadeIn();
+					}
+					else if ($(this).is('.right-header')) {
+						$('.left-text').css({'display':'none'});
+						$('.middle-text').css({'display':'none'});
+						$('.right-text').fadeIn();
+
+					};
+				})
+			});
+		</script>
+	</head>
+
+	<body>
+		<div ID='header'>
+      <div ID='headerBG'></div>
+			<div ID='headertext'>
+				<h1 class='name'>Joseph P. Ross</h1>
+				<h3>Sports Administration Major. Salesman. </h3>
+			</div>
+
+		</div>
+
+		<!-- ==================== CONTENT ==================== -->
+
+		<div class='content'>
+
+
+			<div class='background'>
+
+				<div ID='container'>
+
+					<!-- ========== ABOUT ME ========== -->
+					<div class='columnheader'>
+						<h1>About Joe</h1>
+					</div>
+
+					<div class='columnleft'>
+
+						<div class='contentbox'>
+							<img src="images/joePic.jpg">
+						</div>
+
+					</div>
+          <div class='columnright'>
+						<p>
+							I am currently majoring in Sports Administration at the University of Cincinnati and will receive my Bachelor’s Degree in the summer of 2017. Despite entering the University of Cincinnati as a Mechanical Engineer and had to play catch up in Sports Administration when I transferred a year ago, I have eagerly put my foot into the sports industry by taking advantage of various volunteering opportunities, leading an undergraduate research study with one of my professors and pursuing ticket sales experience in sports with the University of Cincinnati Ticket Office and the Akron Racers.
+            </p>
+
+						<p>
+							I'm also very proud of the work that our Society of Sports Leaders does for inspiring the future leaders and pioneers of the sports industry. I am always willing to step up and help out our organization any way I can whether it be joining our Career Fair/Symposium Committee to help procure teams and talent to participate in our annual Society of Sports Leaders Career Fair, represent SSL as a volunteer for UC Fan First at football games when they are short numbered and need volunteers, and recently agreeing to take on the planning and logistics of our SSL group trip to Indianapolis to tour and network with collegiate and professional organizations along with anything else the President of SSL needs.
+						</p>
+
+						<p>
+							 After I complete my capstone internship next summer and graduate I hope to land an entry level sales position with a professional or collegiate sports organization and use my previous experiences to perform very well right off the bat. I plan to move up the ladder and eventually land a Director of Ticket Sales position at a team, or maybe move towards sponsorships and become a manager there. The dream is to one day become a Chief Revenue/Financial Officer of a Division 1 Athletics Department or a Major League professional team.
+						</p>
+					</div>
+
+					<!-- ========== MY SKILLS ========== -->
+					<div class='columnheader'>
+						<h1>Skills and Experience</h1>
+					</div>
+
+					<div class='myskills-text'>
+            <p>
+							As I mentioned before, I’m currently on a path leading towards sales, at the moment more specifically ticket sales, in collegiate and professional sports. I’ve received ticket sales experience in Division 1 Athletics working for the UC Ticket Office running the Fan First Center where we generated $3300 in ticket sales last season up from $1000 they did the previous year. The professional sports ticket sales experience I have so far is I completed this summer a ticket sales/community relations internship with the Akron Racers, one of six women’s national fast pitch softballs teams in the country.
+						</p>
+						<p>
+							A lot of people even in Akron, down the road of the stadium no less, never heard of the Akron Racers so it is a real challenge trying to sell a lesser known or unknown product when cold calling businesses and non-profit organizations or going out to places in the area in person. It's definitely not the same as at UC when obviously everyone knows our athletics and especially easier to sell tickets to current fans in the arena when I ran the Fan First Center during our basketball season. What was nice about just us three interns doing the selling is we got to approach our two supervisors with new ideas and tweak things and roll with it. This internship would have been very daunting if we hadn't received professional sales consulting from Kathy Burrows, the owner of Sold Out Seating who has worked with teams in the NBA, WNBA, MLB, NHL so it was a tremendous opportunity to learn all summer. She came in every other week to help us with our sales plans and help us execute better to work towards her ambitious goal of doubling attendance from last year.
+						</p>
+						<p>
+							I'm glad I picked a small team to work for regardless as I got as much hands on sales experience possible in my opinion. I was told by my supervisor that the Racers increased ticket sales by 10-15% from last season so I'm very happy I was able to help them achieve that. The experiences I have had in the short amount of time have at times pushed me out of my comfort zone, which have allowed me to mature as a confident and competent professional. Upon graduation, I hope to find a firm that has a culture of developing young salesmen that has a high rate of landing full time sales careers in professional sports.
+						</p>
+					</div>
+
+
+					<!-- === headers === -->
+					<div class='skills-headers'>
+
+						<a class='left-header' href='#left-text'>
+							<h2>Technical Skills</h2>
+						</a>
+						<a class='middle-header' href='#middle-text'>
+							<h2>Work Experience</h2>
+						</a>
+						<a class='right-header' href='#right-text'>
+							<h2>Research Experience</h2>
+						</a>
+
+					</div>
+
+					<!-- === texts === -->
+					<div class='myskills-texts'>
+
+						<div class='left-text'>
+              <p>
+								Ticket Sales Software (in order of proficiency):
+							</p>
+							<ul>
+								<li>Glitnir Ticketing, Paciolan 7 </li>
+							</ul>
+              <p>
+								Applications:
+							</p>
+							<ul>
+								<li>Microsoft Word, Powerpoint, Excel, Access </li>
+							</ul>
+
+						</div>
+
+						<div class='middle-text'>
+              <p>
+								Columbus Blue Jackets | UC Ambassador to Student Rush Program (October 2016 - Present)
+							</p>
+							<ul>
+								<li>Handpicked by the Manager of Inside Sales to be the first UC Ambassador</li>
+                <li>Tasked with collaborating with two fellow Ambassadors to promote and sell Student Rush tickets and packages to UC students and organizations </li>
+                <li>Meet and exceed set individual and UC sales goals compared to other Ohio schools in the program</li>
+							</ul>
+
+              <p>
+								Akron Racers | Ticket Sales/Community Relations Intern (May 2016 - August 2016)
+							</p>
+							<ul>
+								<li>Cultivated relationships with groups and businesses and engaged with the community outside of the softball world to create interest in attending Racers games
+</li>
+                <li>Responsible for selling tickets using Glitnir Ticketing, made phone calls to existent and created databases, cold calling, filling walk-in and phone orders, supervising and staffing ticket windows during games, customer service during and following games, compiling daily/weekly sales numbers, orchestrating group outings, and other office and stadium duties as needed</li>
+                <li>Received professional sports sales consulting from Kathy Burrows, owner of Sold Out Seating</li>
+							</ul>
+
+              <p>
+								University of Cincinnati Ticket Office | Fan First Center Intern (November 2015 - March 2016)
+
+							</p>
+							<ul>
+								<li> Helped provide customer service for ticket holders during games</li>
+                <li>Generated $3300 in ticket sales this season up from $1000 they did last year
+</li>
+                <li> Maintained and created long-term loyalty with UC fan base</li>
+								<li> Assisted the in-game promotions coordinator/li>
+								<li> Helped create attractive 'in-game' ticket specials designed to reward fans that are at the game
+</li>
+							</ul>
+
+						</div>
+
+						<div class='right-text'>
+        <p>
+					Professional Sports Teams’ Marketing Efforts in Columbus, Ohio (July 2015 - June 2016)
+				</p>
+				<p>
+					The purpose of this study was to chronicle the efforts made by several professional sports franchises to gain a share of the Columbus, Ohio market. Specifically, we examined if and how these teams, which generally share a cooperative relationship, compete for a share of this neutral market. This study served both as a history of the Columbus sports market, and as a granular look at how professional sports franchises balance their relationship as competitors and collaborators. This information will help future scholars and practitioners in sport, marketing, management, and other fields by shedding light on each side’s strategy, and potential areas for mutual benefit.
+				</p>
+				<p>
+					I was fortunate enough to interview front office executives of the Cleveland Browns, Cincinnati Bengals, Indianapolis Colts and the Columbus Sports Commission. The research was awarded a $1700 research grant from the Undergraduate Research Committee in Human Services which gave me the opportunity to present it at the 2016 Sports Entertainment and Venues Tomorrow Conference at the University of South Carolina as a poster presentation.
+				</p>
+
+						</div>
+
+						<div class='placeholder'>
+							<p>Select a field to learn more</p>
+						</div>
+					</div>
+
+					<!-- ========== MORE ABOUT ME ==========-->
+
+					<div class='columnheader'>
+						<h1>Contact Me!</h1>
+					</div>
+          <div class='contact-info'>
+            <p>Phone Number: 513-543-9238</p>
+            <p>Email: ross2jp@mail.uc.edu</p>
+          </div>
+
+					<div class='madeby'>
+						<p>Website created by Stephen Yau (yau.37@osu.edu)</p>
+					</div>
+
+				</div>
+
+
+				<!-- ========== FOOTER ========== -->
+				<div class='footer'>
+					<a class='footer-third footer-third-left' href="http://localhost:4567/JosephRossResume.pdf">
+						<h2>
+              My<br>Resume<br>
+            </h2>
+					</a>
+
+					<a class='footer-third footer-third-middle' href="">
+						<h2>
+							<br></br>
+						</h2>
+					</a>
+
+					<a class='footer-third footer-third-right' href="https://www.linkedin.com/in/joseph-ross-88104a91">
+						<h2>
+              My<br>LinkedIn<br>
+            </h2>
+					</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
